@@ -1,0 +1,2509 @@
+[
+    {
+        "id": "3ef0de849d75b85e",
+        "type": "tab",
+        "label": "Locus Trolleberg",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e4521815e4db913d",
+        "type": "modbus-client",
+        "name": "Turbine_2",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.1.202",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "efdba2d18bedeb23",
+        "type": "modbus-client",
+        "name": "Turbine_3",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.1.203",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "d67232bc7e8e0e9c",
+        "type": "modbus-client",
+        "name": "Acuvim 1",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "172.17.20.42",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "5d080c1de1037d7b",
+        "type": "modbus-client",
+        "name": "Acuvim 2",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "172.17.20.43",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "8212428f140676c7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8295570633e5408e",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 P_Actual",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "6",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 380,
+        "wires": [
+            [],
+            [
+                "1faea9527d8613b1"
+            ]
+        ]
+    },
+    {
+        "id": "1faea9527d8613b1",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nmsg.payload = data;\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Actual: \" + msg.payload });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n global.set(\"T2_ActiveP\", data);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "833fd40ec78fe7e1",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 Wind_Speed",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "4",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1140,
+        "y": 140,
+        "wires": [
+            [],
+            [
+                "0b9af5e952288e32"
+            ]
+        ]
+    },
+    {
+        "id": "0b9af5e952288e32",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE();\ndata = data / 10;\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Wind_Speed: \" + data });\n\nglobal.set(\"t2_wind_speed\", data);\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"wind_speed\",\n    \"t\": timestamp,\n    \"v\": data,\n    \"origin\": \"trolleberg-2\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 140,
+        "wires": [
+            [
+                "8055eddf036bb4cf"
+            ]
+        ]
+    },
+    {
+        "id": "ac4958c2fc02605b",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 P_Setpoint",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "7",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 460,
+        "wires": [
+            [],
+            [
+                "4d9db70395e7eb52"
+            ]
+        ]
+    },
+    {
+        "id": "4d9db70395e7eb52",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Setpoint: \" + data });\n\nglobal.set(\"setpointT2\", data);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "094ebf4630f68952",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 P_Rated",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "51",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 540,
+        "wires": [
+            [],
+            [
+                "9b5dc415eba92c5b"
+            ]
+        ]
+    },
+    {
+        "id": "9b5dc415eba92c5b",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Rated: \" + data });\n\n// set \"flow-global\" variable\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n// global.set(\"SOC\", data);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b78d440c7b7dcc5",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "T2 Start Enabled",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "8",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2020,
+        "y": 340,
+        "wires": [
+            [],
+            [
+                "938f5703f73495b0"
+            ]
+        ]
+    },
+    {
+        "id": "938f5703f73495b0",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nlet status = (data == 1) ? \"green\" : \"red\";\nnode.status({ fill: status, shape: \"dot\", text: \"Start Enabled: \" + data });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e45b2605dbf906ba",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 P_Available",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "5",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1140,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "0c106695f52a812e"
+            ]
+        ]
+    },
+    {
+        "id": "0c106695f52a812e",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nglobal.set(\"T2_AvailP\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Available: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"available_active\",\n    v: data,\n    t: timestamp,\n    \"origin\": \"trolleberg-2\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 220,
+        "wires": [
+            [
+                "3bbfbb8cca451955"
+            ]
+        ]
+    },
+    {
+        "id": "520cefe5ab084b45",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "T2 Maint Status",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "2",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2020,
+        "y": 260,
+        "wires": [
+            [],
+            [
+                "5431eadc2e56a077"
+            ]
+        ]
+    },
+    {
+        "id": "5431eadc2e56a077",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nlet status = (data == 1) ? \"red\" : \"green\";\nnode.status({ fill: status, shape: \"dot\", text: \"Maint Status: \" + data });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74249afbf5f2fd1d",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 WEC_curtailment",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "54",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2010,
+        "y": 420,
+        "wires": [
+            [],
+            [
+                "325c99afac73ab5e"
+            ]
+        ]
+    },
+    {
+        "id": "325c99afac73ab5e",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Avail: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca042d65532019e3",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 WEC_setpoint",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "55",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2020,
+        "y": 500,
+        "wires": [
+            [],
+            [
+                "599350d6cd5a250d"
+            ]
+        ]
+    },
+    {
+        "id": "599350d6cd5a250d",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"WEC_Setpoint: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8aa68c01aaa2b421",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 Wind_Speed",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "4",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1140,
+        "y": 720,
+        "wires": [
+            [],
+            [
+                "ce24e52f052cfc69"
+            ]
+        ]
+    },
+    {
+        "id": "ce24e52f052cfc69",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \ndata = data/10;\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Wind_Speed: \" + data });\nglobal.set(\"t3_wind_speed\", data);\nlet t2_wind_speed = global.get(\"t2_wind_speed\");\nglobal.set(\"mean_wind_speed\", (data+t2_wind_speed)/2);\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"wind_speed\",\n    \"t\": timestamp,\n    \"v\": data,\n    \"origin\": \"trolleberg-3\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 720,
+        "wires": [
+            [
+                "3fe26fa5fb57bc3a"
+            ]
+        ]
+    },
+    {
+        "id": "9321ad87b46a6ac9",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 P_Actual",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "6",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 960,
+        "wires": [
+            [],
+            [
+                "86da4d704ba02fbc"
+            ]
+        ]
+    },
+    {
+        "id": "86da4d704ba02fbc",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nmsg.payload = data;\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Actual: \" + msg.payload });\n\n// set \"flow-global\" variable\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\nglobal.set(\"T3_ActiveP\", data);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a87de59aeb8dd116",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 P_Setpoint",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "7",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 1040,
+        "wires": [
+            [],
+            [
+                "930258ddf74a0972"
+            ]
+        ]
+    },
+    {
+        "id": "930258ddf74a0972",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Setpoint: \" + data });\n\nglobal.set(\"setpointT3\", data);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c21dd08bf6d88dc",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 P_Rated",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "51",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 1120,
+        "wires": [
+            [],
+            [
+                "769c425985f86528"
+            ]
+        ]
+    },
+    {
+        "id": "769c425985f86528",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Rated: \" + data });\n\n// set \"flow-global\" variable\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n// global.set(\"SOC\", data);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b5d92ee8c9a7397",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 P_Available",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "5",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1140,
+        "y": 800,
+        "wires": [
+            [],
+            [
+                "01bc6cea68d4c6ec"
+            ]
+        ]
+    },
+    {
+        "id": "01bc6cea68d4c6ec",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nglobal.set(\"T3_AvailP\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"P_Available: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"available_active\",\n    v: data,\n    t: timestamp,\n    \"origin\": \"trolleberg-3\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 800,
+        "wires": [
+            [
+                "0d9431d7f39f8d92"
+            ]
+        ]
+    },
+    {
+        "id": "5ee61b9db1997a1b",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "T3 Start Enabled",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "8",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2020,
+        "y": 920,
+        "wires": [
+            [],
+            [
+                "3e725303180cb3d7"
+            ]
+        ]
+    },
+    {
+        "id": "3e725303180cb3d7",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nlet status = (data == 1) ? \"green\" : \"red\";\nnode.status({ fill: status, shape: \"dot\", text: \"Start Enabled: \" + data });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5bc0eab8fef11c21",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "T3 Maint Status",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "2",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2020,
+        "y": 840,
+        "wires": [
+            [],
+            [
+                "1cb6500c6627a33d"
+            ]
+        ]
+    },
+    {
+        "id": "1cb6500c6627a33d",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \nlet status = (data == 1) ? \"red\" : \"green\";\nnode.status({ fill: status, shape: \"dot\", text: \"Maint Status: \" + data });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b02c40d1c3773996",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 WEC_curtailment",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "54",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2010,
+        "y": 1000,
+        "wires": [
+            [],
+            [
+                "b5ef9bd72c1b1abb"
+            ]
+        ]
+    },
+    {
+        "id": "b5ef9bd72c1b1abb",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Avail: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92bc49cc6c8fa551",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 WEC_setpoint",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "55",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "efdba2d18bedeb23",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 2020,
+        "y": 1080,
+        "wires": [
+            [],
+            [
+                "67286b5ef32d0513"
+            ]
+        ]
+    },
+    {
+        "id": "67286b5ef32d0513",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt16BE(); \n\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"WEC_Setpoint: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2240,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55cc364168859ff9",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "SITE Total Active Power",
+        "func": "\n    let parkActivePower = global.get(\"activeP_T2\") + global.get(\"activeP_T3\");\n    parkActivePower = Number(parkActivePower.toFixed(2));\n    global.set(\"Total_ActiveP\", parkActivePower);\n    node.status({ fill: \"blue\", shape: \"dot\", text: \"Total_Active_Power: \" + parkActivePower });\n    const d = new Date();\n    const timestamp = d.getTime() / 1000\n    msg.payload = {\n        \"metric_name\": \"active_power\",\n        \"t\": timestamp,\n        \"v\": parkActivePower,\n        \"origin\": \"locusreab-trolleberg-001\"\n    }\n    node.send(msg);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 800,
+        "wires": [
+            [
+                "99b23234df41844b"
+            ]
+        ]
+    },
+    {
+        "id": "e4b09e76e6ff985a",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "SITE Total Avail Power",
+        "func": "\n\nlet parkAvailPower = global.get(\"T2_AvailP\") + global.get(\"T3_AvailP\");\nglobal.set(\"parkAvailPower\", parkAvailPower);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Total_Available_Power: \" + parkAvailPower });\nconst d = new Date();\nconst timestamp = d.getTime() / 1000\nmsg.payload = {\n    \"metric_name\": \"available_active\",\n    \"t\": timestamp,\n    \"v\": parkAvailPower,\n    \"origin\": \"locusreab-trolleberg-001\"\n}\nnode.send(msg);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 880,
+        "wires": [
+            [
+                "e3fe7e75e77307db"
+            ]
+        ]
+    },
+    {
+        "id": "d3ca8b3fd3b1d085",
+        "type": "comment",
+        "z": "3ef0de849d75b85e",
+        "name": "TURBINE 2",
+        "info": "****",
+        "x": 1270,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "dab68fd84d70602c",
+        "type": "comment",
+        "z": "3ef0de849d75b85e",
+        "name": "TURBINE 3",
+        "info": "****",
+        "x": 1270,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "023987e5d39a4455",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "T2 P_Curve",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "57",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 300,
+        "wires": [
+            [],
+            [
+                "744dc5b9b689cec7"
+            ]
+        ]
+    },
+    {
+        "id": "744dc5b9b689cec7",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readUInt16BE(); \nglobal.set(\"T2_curveP\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"curve_P: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "397afc2874950e4b",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "T3 P_Curve",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "57",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "e4521815e4db913d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 1150,
+        "y": 880,
+        "wires": [
+            [],
+            [
+                "ff667ac1ed2128d4"
+            ]
+        ]
+    },
+    {
+        "id": "ff667ac1ed2128d4",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "parse I16",
+        "func": "let data = msg.payload.buffer;\ndata = data.readUInt16BE(); \nglobal.set(\"T3_curveP\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"curve_P: \" + data });\n\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\n// msg.payload = {\n//     \"metric_name\": \"battery_soc\",\n//     v: data,\n//     t: timestamp\n// }\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22f9dc727e58a405",
+        "type": "comment",
+        "z": "3ef0de849d75b85e",
+        "name": "Notes LCS control",
+        "info": "",
+        "x": 390,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3a7411b69e85da52",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "ActivePower Turbine 2 (16418)",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "16418",
+        "quantity": "2",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "d67232bc7e8e0e9c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "b9ea8787817729b2"
+            ]
+        ]
+    },
+    {
+        "id": "b9ea8787817729b2",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "Parse Power F32",
+        "func": "let data = msg.payload.buffer;\ndata = Number((data.readFloatBE()/1000).toFixed(2));\ndata = data *-1\nmsg.payload = data\nglobal.set(\"activeP_T2\", data); // flow scope variable\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"ActivePower: \" + data });\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-battery-three-quarters"
+    },
+    {
+        "id": "85d50a1a0f338dc0",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "ActivePower Turbine 3 (16418)",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "16418",
+        "quantity": "2",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "5d080c1de1037d7b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [],
+            [
+                "d1f6daa39c0fc274"
+            ]
+        ]
+    },
+    {
+        "id": "d1f6daa39c0fc274",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "Parse Power F32",
+        "func": "let data = msg.payload.buffer;\ndata = Number((data.readFloatBE()/1000).toFixed(2));\ndata = data *-1;\nglobal.set(\"activeP_T3\", data); // flow scope variable\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"ActivePower: \" + data });\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-battery-three-quarters"
+    },
+    {
+        "id": "a3d72c940fb5d448",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "send setpoint",
+        "func": "var value = msg.payload.p;\nvar buf = Buffer.alloc(2);\nbuf.writeInt16BE(value); \nlet setpoint = buf.readInt16BE(0);\nmsg.payload = {\n    'value': setpoint,\n};\nif (setpoint <= 3000 && setpoint >= 500){\nnode.send(msg);\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 980,
+        "wires": [
+            [
+                "981620a3e344cd10"
+            ]
+        ]
+    },
+    {
+        "id": "981620a3e344cd10",
+        "type": "modbus-write",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 Setpoint",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "7",
+        "quantity": "1",
+        "server": "e4521815e4db913d",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 610,
+        "y": 980,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dc5be1f7e5ada045",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "3000",
+        "props": [
+            {
+                "p": "payload.p",
+                "v": "3000",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 980,
+        "wires": [
+            [
+                "a3d72c940fb5d448",
+                "b0b9e61f1e3552bd"
+            ]
+        ]
+    },
+    {
+        "id": "b0b9e61f1e3552bd",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "send setpoint",
+        "func": "var value = msg.payload.p;\nvar buf = Buffer.alloc(2);\nbuf.writeInt16BE(value);\nlet setpoint = buf.readInt16BE(0);\nmsg.payload = {\n    'value': setpoint,\n};\nif (setpoint <= 3000 && setpoint >= 500) {\n    node.send(msg);\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1060,
+        "wires": [
+            [
+                "4fcabb622a16c0cb"
+            ]
+        ]
+    },
+    {
+        "id": "4fcabb622a16c0cb",
+        "type": "modbus-write",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 Setpoint",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "7",
+        "quantity": "1",
+        "server": "efdba2d18bedeb23",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 610,
+        "y": 1060,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "891ce3bb037432e9",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "500",
+        "props": [
+            {
+                "p": "payload.p",
+                "v": "500",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 1060,
+        "wires": [
+            [
+                "a3d72c940fb5d448",
+                "b0b9e61f1e3552bd"
+            ]
+        ]
+    },
+    {
+        "id": "585e6775b8dc31ac",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "csvPayload",
+        "func": "const d = new Date();\nconst timestamp = d.getTime() / 1000;\nlet dateString = d.toUTCString();\nlet activeP = global.get(\"Total_ActiveP\");\nlet setpointT2 = global.get(\"setpointT2\");\nlet setpointT3 = global.get(\"setpointT3\");\n\n\nlet csvPayload = {\n    \"DateTime\": timestamp,\n    \"SetpointT2\" : setpointT2,\n    \"SetpointT3\": setpointT3,\n    \"ActivePower\": activeP\n};\nmsg.payload = csvPayload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1320,
+        "wires": [
+            [
+                "cfce6be4ce696753"
+            ]
+        ]
+    },
+    {
+        "id": "cfce6be4ce696753",
+        "type": "csv",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "DateTime,parkAvailPower,Total_ActiveP,activeP_T2,activeP_T3,t3_wind_speed",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 510,
+        "y": 1320,
+        "wires": [
+            [
+                "9e692381672778b3"
+            ]
+        ]
+    },
+    {
+        "id": "ac031ba71d91c7cd",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": ".5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 1320,
+        "wires": [
+            [
+                "585e6775b8dc31ac"
+            ]
+        ]
+    },
+    {
+        "id": "9e692381672778b3",
+        "type": "file",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "",
+        "filename": "/home/flower/trollebergDataDump6_2.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 780,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "99b23234df41844b",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 690,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "e3fe7e75e77307db",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 690,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "8055eddf036bb4cf",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 1650,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3fe26fa5fb57bc3a",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 1650,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "0f8deb187633d19f",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "interval",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": ".5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "55cc364168859ff9"
+            ]
+        ]
+    },
+    {
+        "id": "89762bd04c41683a",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "interval",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": ".5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "e4b09e76e6ff985a"
+            ]
+        ]
+    },
+    {
+        "id": "f827744e1dc887e6",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "Import Energy Turbine 2(16456)",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "16456",
+        "quantity": "2",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "d67232bc7e8e0e9c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [],
+            [
+                "82020f14f382f104"
+            ]
+        ]
+    },
+    {
+        "id": "82020f14f382f104",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "ParseEnergyI32",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt32BE()/10;\nglobal.set(\"turbine2_import\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Import: \" + data + \" kw/h\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "icon": "node-red/status.svg"
+    },
+    {
+        "id": "fa01ceccd52db6da",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "Export Energy Turbine 2(16458)",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "16458",
+        "quantity": "2",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "d67232bc7e8e0e9c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 420,
+        "wires": [
+            [],
+            [
+                "abd263d4f73dcf68"
+            ]
+        ]
+    },
+    {
+        "id": "abd263d4f73dcf68",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "ParseEnergyI32",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt32BE()/10;\nglobal.set(\"turbine2_export\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Export: \" + data + \" kw/h\"});\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"export_energy_kwh\",\n    v: data,\n    t: timestamp,\n    \"origin\": \"trolleberg-2\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "3ff09488a9652983"
+            ]
+        ],
+        "icon": "node-red/status.svg"
+    },
+    {
+        "id": "6d49eb81b9851657",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "Import Energy Turbine 3(16456)",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "16456",
+        "quantity": "2",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "5d080c1de1037d7b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 480,
+        "wires": [
+            [],
+            [
+                "06daf5c88a066790"
+            ]
+        ]
+    },
+    {
+        "id": "06daf5c88a066790",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "ParseEnergyI32",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt32BE()/10;\nglobal.set(\"turbine3_import\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Import: \" + data + \" kw/h\"});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 480,
+        "wires": [
+            []
+        ],
+        "icon": "node-red/status.svg"
+    },
+    {
+        "id": "0cbd7908300f62b7",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "Export Energy Turbine 3(16458)",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "16458",
+        "quantity": "2",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "5d080c1de1037d7b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 540,
+        "wires": [
+            [],
+            [
+                "da0cd0644a5f53bb"
+            ]
+        ]
+    },
+    {
+        "id": "da0cd0644a5f53bb",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "ParseEnergyI32",
+        "func": "let data = msg.payload.buffer;\ndata = data.readInt32BE()/10;\nglobal.set(\"turbine3_export\", data);\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Export: \" + data + \" kw/h\"});\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"export_energy_kwh\",\n    v: data,\n    t: timestamp,\n    \"origin\": \"trolleberg-3\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 540,
+        "wires": [
+            [
+                "8aa0faef9062e92b"
+            ]
+        ],
+        "icon": "node-red/status.svg"
+    },
+    {
+        "id": "44dbf40fd91d64e5",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "SITE Total Energy Export",
+        "func": "let turbine2_export = global.get(\"turbine2_export\");\nlet turbine3_export = global.get(\"turbine3_export\");\nlet data = turbine2_export + turbine3_export;\ndata = Number(data.toFixed(2));\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"export_energy_kwh\",\n    v: data,\n    t: timestamp,\n    \"origin\": \"locusreab-trolleberg-001\"\n};\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Export: \" + data + \" kw/h\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 640,
+        "wires": [
+            [
+                "a250ab60368175d0"
+            ]
+        ]
+    },
+    {
+        "id": "7eb95fc64a070946",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "SITE Total Energy Import",
+        "func": "let turbine2_import = global.get(\"turbine2_import\");\nlet turbine3_import = global.get(\"turbine3_import\");\nlet data = turbine2_import + turbine3_import;\ndata = Number(data.toFixed(3));\nconst d = new Date();\nconst timestamp = d.getTime() / 1000;\nmsg.payload = {\n    \"metric_name\": \"import_energy_kwh\",\n    v: data,\n    t: timestamp,\n    \"origin\": \"locusreab-trolleberg-001\"\n};\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Import: \" + data + \" kw/h\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 700,
+        "wires": [
+            [
+                "f67c116372bb7674"
+            ]
+        ]
+    },
+    {
+        "id": "0b0cb2ede0cbdf6d",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "44dbf40fd91d64e5"
+            ]
+        ]
+    },
+    {
+        "id": "02bc5b88bf703cfc",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 700,
+        "wires": [
+            [
+                "7eb95fc64a070946"
+            ]
+        ]
+    },
+    {
+        "id": "a250ab60368175d0",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 690,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f67c116372bb7674",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 690,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "fc4dcf7bc7b09bd2",
+        "type": "modbus-read",
+        "z": "3ef0de849d75b85e",
+        "name": "Frequency Acuvim (16384)",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "16384",
+        "quantity": "2",
+        "rate": "500",
+        "rateUnit": "ms",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "d67232bc7e8e0e9c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [],
+            [
+                "ea569ed29b1550a7"
+            ]
+        ]
+    },
+    {
+        "id": "ea569ed29b1550a7",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "Parse Freq F32",
+        "func": "let data = msg.payload.buffer;\ndata = Number((data.readFloatBE()).toFixed(3));\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Frequency: \" + data });\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-battery-three-quarters"
+    },
+    {
+        "id": "8aa0faef9062e92b",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 770,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3ff09488a9652983",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 770,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0d9431d7f39f8d92",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 1650,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "3bbfbb8cca451955",
+        "type": "mqtt out",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "topic": "powercpu/LocalMeasurements",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8212428f140676c7",
+        "x": 1650,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f88b2b4160aa5073",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "start sign",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1520,
+        "wires": [
+            [
+                "427591db762c1a9d",
+                "b97e46272836f8b9"
+            ]
+        ]
+    },
+    {
+        "id": "9b165d3150edfe2d",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "d": true,
+        "name": "mFRR down test (static)",
+        "func": "// mFRR step test for wind assets (static baseline method)\n// Check Power Direction (Charge/Discharge)\n// Units are kW and milliseconds\n\nvar nominalSetpoint = 6000;\nvar baselineSetpoint = 2500; // reference level\nvar mfrrDownCapacity = -1500;\n\nglobal.set(\"cap_mfrrup\", 0);\nglobal.set(\"cap_mfrrdown\", mfrrDownCapacity);\nglobal.set(\"mfrr_baseline\", global.get(\"active_power\"));\n\nvar setpoint;\n\nconst stepArray = [ // [setpoint, Duration millis]\n    [nominalSetpoint, 2*60*1000],\n    [baselineSetpoint, 5*60*1000],\n    [baselineSetpoint+mfrrDownCapacity, 32*60*1000],\n    [baselineSetpoint, 5*60*1000],\n    [nominalSetpoint, 2*60*1000],\n];\n\n// Calculate total time of preflight test\nlet duration = 0\nfor (var step of stepArray) { duration += step[1] }\nflow.set(\"preflightDuration\", duration)\n\n// Run the step sequence\nfor (var step of stepArray) {\n    setpoint = step[0];\n    global.set(\"setpoint\", setpoint); // NOTE : This might need to be done in another node on real wind asset\n    if (setpoint == baselineSetpoint+mfrrDownCapacity) {\n        global.set(\"mfrr_setpoint\", mfrrDownCapacity);\n        global.set(\"mfrr_baseline\", baselineSetpoint);\n    } else if (setpoint == baselineSetpoint) {\n        global.set(\"mfrr_setpoint\", 0);\n        global.set(\"mfrr_baseline\", baselineSetpoint);\n    } else {\n        global.set(\"mfrr_setpoint\", 0);\n        global.set(\"mfrr_baseline\", 0);\n    }\n    msg.payload = {\n        \"p\": setpoint,\n    }\n    node.send(msg);\n    node.status({fill:\"green\",shape:\"ring\",text:\"p:\"+setpoint+\", waiting \"+step[1]+\"ms\"});\n    await new Promise(resolve => setTimeout(resolve, step[1]));\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"mfrr_setpoint\", 0);\nglobal.set(\"mfrr_baseline\", 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1480,
+        "wires": [
+            []
+        ],
+        "icon": "node-red/serial.svg"
+    },
+    {
+        "id": "1a42fc34dd2bae79",
+        "type": "csv",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "DateTime,InsAcPow,RefAcPow,Pmax,Pmin,MfrrSetP,MfrrAct,Cap_MfrrUp,Cap_MfrrDown,WindSpeed",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 510,
+        "y": 1600,
+        "wires": [
+            [
+                "f46d923fe938f619",
+                "441b4089dd69f186"
+            ]
+        ]
+    },
+    {
+        "id": "b375207c67ac5316",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "Get data",
+        "func": "\nlet setpoint = global.get(\"setpoint\");\nlet activep = global.get(\"Total_ActiveP\");\nlet refacpow = global.get(\"mfrr_baseline\");\nif (refacpow==0) {\n    refacpow = activep;\n}\nlet pmax = global.get(\"parkAvailPower\");\nlet pmin = 230*2;\nlet mfrrsetp = global.get(\"mfrr_setpoint\");\n\nlet mfrract;\nlet mfrr_active_flag = global.get(\"mfrr_active\");\nif (mfrrsetp == 0 && mfrr_active_flag == false) {\n    mfrract = 0;\n} else if (mfrrsetp != 0 && mfrr_active_flag == true) {\n    mfrract = activep-refacpow;\n} else if (mfrrsetp == 0 && mfrr_active_flag == true) {\n    if (Math.abs(refacpow-pmax) < 100) {\n        global.set(\"mfrr_active\", false);\n        mfrract = 0;\n    } else {\n        mfrract = activep - refacpow;\n    }\n}\n\nlet cap_mfrrup = global.get(\"cap_mfrrup\");\nlet cap_mfrrdown = global.get(\"cap_mfrrdown\");\nlet windspeed = global.get(\"mean_wind_speed\");\n\n//let activep_T2 = global.get(\"T2_ActiveP\");\n//let activep_T3 = global.get(\"T3_ActiveP\");\n\nlet d = new Date();\nlet datetime = (\n    d.getFullYear() +\n    ('00' + (d.getMonth() + 1)).slice(-2) +\n    ('00' + d.getDate()).slice(-2) + 'T' +\n    ('00' + d.getHours()).slice(-2) +\n    ('00' + d.getMinutes()).slice(-2) +\n    ('00' + d.getSeconds()).slice(-2) + '.' +\n    ('000' + d.getMilliseconds()).slice(-3));\n\nmsg.payload = {\n    DateTime: datetime,\n    InsAcPow: activep,\n    RefAcPow: refacpow,\n    Pmax: pmax,\n    Pmin: pmin,\n    MfrrSetP: mfrrsetp,\n    MfrrAct: mfrract,\n    Cap_MfrrUp: cap_mfrrup,\n    Cap_MfrrDown: cap_mfrrdown,\n    WindSpeed: windspeed\n}\n\nnode.status({fill:\"red\",shape:\"ring\",text:\"Setp:\" + setpoint + \", Power:\" + activep + \", RefAcPow:\" +refacpow});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1600,
+        "wires": [
+            [
+                "1a42fc34dd2bae79"
+            ]
+        ]
+    },
+    {
+        "id": "441b4089dd69f186",
+        "type": "file",
+        "z": "3ef0de849d75b85e",
+        "name": "",
+        "filename": "/home/flower/trolleberg_mfrr_down_20250619_1.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 800,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "427591db762c1a9d",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "trigger logging",
+        "func": "// Trigger next node every dt milliseconds for the\n// duration of the preflight test.\n\n// sleep 1sec to allow duration to be calculated\nawait new Promise(resolve => setTimeout(resolve, 1000));    \n\nlet preflightDuration = flow.get(\"preflightDuration\");  // ms\nlet dt = 1000;    // ms\nlet startTime = Date.now()\nlet stopTime = startTime + preflightDuration\nlet time = startTime\n\n\nwhile (time < stopTime) {\n    msg.payload = 1;\n    node.send(msg);\n    node.status({fill:\"red\",shape:\"ring\",text:\"dt=\"+dt+\", time left: \" + Math.round((stopTime-time)/1000) + \" s\"});\n    await new Promise(resolve => setTimeout(resolve, dt));\n    time += dt\n}\n\nnode.status({fill:\"green\",shape:\"ring\",text:\"done (duration was \"+preflightDuration+\"ms)\"});",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 1600,
+        "wires": [
+            [
+                "b375207c67ac5316"
+            ]
+        ]
+    },
+    {
+        "id": "da332c581adac512",
+        "type": "comment",
+        "z": "3ef0de849d75b85e",
+        "name": "Wind mFRR test",
+        "info": "",
+        "x": 170,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "f46d923fe938f619",
+        "type": "debug",
+        "z": "3ef0de849d75b85e",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "52fb4d286ae15e14",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "distribute setpoint (assume 95.5% efficiency)",
+        "func": "let value = msg.payload.p;\nconst eta = 0.955;\nlet setpoint_T2 = value/2/eta;\nlet setpoint_T3 = value/2/eta;\n\nif (setpoint_T2 < 500) {\n    setpoint_T2 = 500;\n} else if (setpoint_T2 > 3000) {\n    setpoint_T2 = 3000;\n}\n\nif (setpoint_T3 < 500) {\n    setpoint_T3 = 500;\n} else if (setpoint_T3 > 3000) {\n    setpoint_T3 = 3000;\n}\n\nnode.status({fill:\"red\",shape:\"ring\",text:\"setpoint T2: \"+setpoint_T2+\", T3: \" + setpoint_T3});\n\nlet msg_T2 = {}\nmsg_T2.payload = {\n    'value': setpoint_T2\n};\n\nlet msg_T3 = {}\nmsg_T3.payload = {\n    'value': setpoint_T3\n};\n\nreturn [msg_T2, msg_T3];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1520,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "64881ca6df105f21",
+        "type": "modbus-write",
+        "z": "3ef0de849d75b85e",
+        "name": "T2 Setpoint",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "7",
+        "quantity": "1",
+        "server": "e4521815e4db913d",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 1150,
+        "y": 1480,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e5f8aadd4cbd409c",
+        "type": "modbus-write",
+        "z": "3ef0de849d75b85e",
+        "name": "T3 Setpoint",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "7",
+        "quantity": "1",
+        "server": "efdba2d18bedeb23",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 1150,
+        "y": 1540,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cdf9ee7e0a702a5c",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "250",
+        "props": [
+            {
+                "p": "payload.p",
+                "v": "250",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90d2e0f51905ecd4",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "1000",
+        "props": [
+            {
+                "p": "payload.p",
+                "v": "1000",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd9393dd2101a87e",
+        "type": "inject",
+        "z": "3ef0de849d75b85e",
+        "name": "2000",
+        "props": [
+            {
+                "p": "payload.p",
+                "v": "2000",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c1ec37c171dac77",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "Baseline calculator (while-loop On Start, 120kW constant offset)",
+        "func": "",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n\nvar available_power;\n//const time_between_updates_ms = 210 * 60 * 1000; // 3.5min\nconst time_between_updates_ms = 2 * 1000; //2 sec\nconst constant_offset = 120; // from analysis\n\nwhile (true) {\n    available_power = global.get(\"parkAvailPower\") - constant_offset;\n    global.set(\"mfrr_baseline\", available_power);\n    node.status({ fill: \"blue\", shape: \"dot\", text: \"baseline:\" + available_power });\n\n    await new Promise(resolve => setTimeout(resolve, time_between_updates_ms));\n}\n",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b97e46272836f8b9",
+        "type": "function",
+        "z": "3ef0de849d75b85e",
+        "name": "mFRR down test (dynamic)",
+        "func": "// mFRR step test for wind assets (dynamic baseline method)\n// Check Power Direction (Charge/Discharge)\n// Units are kW and milliseconds\n\nconst MFRR_DISABLED = 0;\nconst NOMINAL_SETPOINT = 6000;\nconst MFRRDOWN_CAPACITY = -3000;\nconst MIN_SETPOINT = 2*230;\n\nglobal.set(\"cap_mfrrup\", 0);\nglobal.set(\"cap_mfrrdown\", MFRRDOWN_CAPACITY);\n\nvar mfrr_setpoint;\nvar step_time;\nvar mfrr_baseline;\nvar setpoint;\nvar ts_step;\n\nconst stepArray = [ // [setpoint, Duration millis]\n    [MFRR_DISABLED, 15*1000],    // TODO change time to 5 min\n    [MFRRDOWN_CAPACITY, 60*1000],  // TODO change time\n    [MFRR_DISABLED, 15*1000],\n];\n\n// Calculate total time of preflight test\nlet duration = 0\nfor (var step of stepArray) { duration += step[1] }\nflow.set(\"preflightDuration\", duration)\n\n// sleep 1sec to allow logging to set up\nawait new Promise(resolve => setTimeout(resolve, 1000));    \n\n\n// Run the test sequence\nfor (var step of stepArray) {\n    ts_step = Date.now();\n    step_time = step[1];\n    mfrr_setpoint = step[0];\n    global.set(\"mfrr_setpoint\", mfrr_setpoint);\n    \n    // Recalculate setpoint every second until test step is expired\n    // (this is to account for if baseline changes)\n    while ((Date.now() - ts_step) < step_time) {\n        mfrr_baseline = global.get(\"mfrr_baseline\");\n        if (mfrr_setpoint == MFRR_DISABLED) {\n            setpoint = NOMINAL_SETPOINT;\n        } else {\n            // Non-zero mfrr_setpoint means mfrr is active\n            setpoint = mfrr_baseline + mfrr_setpoint;\n            global.set(\"mfrr_active\", true);\n        }\n        setpoint = Math.max(setpoint, MIN_SETPOINT);\n        setpoint = Math.min(setpoint, NOMINAL_SETPOINT);\n        global.set(\"setpoint\", setpoint);\n        \n        msg.payload = {\n            \"p\": setpoint,\n        }\n        node.send(msg);\n        let seconds_until_next_step = Math.round((step_time - (Date.now()-ts_step)) / 1000);\n        node.status({fill:\"green\",shape:\"ring\",text:\"p:\"+setpoint+ \". Time until next step: \" + seconds_until_next_step + \"s\"});\n\n        await new Promise(resolve => setTimeout(resolve, 1000));    // sleep 1sec\n    }\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"mfrr_setpoint\", 0);\nglobal.set(\"mfrr_active\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1520,
+        "wires": [
+            [
+                "5e0c39d48623f5f3"
+            ]
+        ],
+        "icon": "node-red/serial.svg"
+    },
+    {
+        "id": "5e0c39d48623f5f3",
+        "type": "debug",
+        "z": "3ef0de849d75b85e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1480,
+        "wires": []
+    }
+]
